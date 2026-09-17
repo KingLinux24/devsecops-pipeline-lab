@@ -21,15 +21,16 @@ A shift-left security telemetry and automated code analysis laboratory built wit
                                     │
                            [ Quality Gate Check ]
                            (Audit & Security Flags)
-🛡️ Integrated Security Scanners
+```
+## 🛡️ Integrated Security Scanners
 Python SAST (Bandit): Inspects Python application code (app/) for unsafe code patterns including dynamic evaluation (eval()), hardcoded credentials, and weak pseudo-random number generators (PRNG).
 
 IaC Security (Checkov): Audits Terraform infrastructure definitions (terraform/) for AWS security misconfigurations, such as unencrypted S3 buckets, public access policies, and overly permissive inbound Security Group rules (0.0.0.0/0 on SSH).
 
 Secret Detection (Gitleaks): Scans git commit history and source code for exposed API keys, high-entropy strings, and hardcoded AWS credentials.
 
-📂 Repository Structure
-Plaintext
+## 📂 Repository Structure
+```Plaintext
 devsecops-pipeline-lab/
 ├── .github/
 │   └── workflows/
@@ -40,7 +41,8 @@ devsecops-pipeline-lab/
 │   └── main.tf                      # Terraform test target (IaC misconfigurations)
 ├── scripts/                         # Security automation & reporting scripts
 └── README.md                        # Portfolio documentation
-🧪 Simulated Vulnerability Findings
+```
+## 🧪 Simulated Vulnerability Findings
 The repository contains intentional pre-deployment security findings used to validate pipeline scanner coverage:
 
 1. Application Security (app/api.py)
